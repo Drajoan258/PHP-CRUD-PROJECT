@@ -5,6 +5,5 @@ $conn = mysqli_connect('localhost', 'root', '', 'operationcrud');
       {
         die("Connection Failed".mysqli_connect_error());
       }
-    mysqli_close($conn);
 
 ?>

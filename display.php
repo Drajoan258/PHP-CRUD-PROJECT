@@ -1,3 +1,5 @@
+<?php include "./includes/connect.php" ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,6 +27,16 @@
           </tr>
         </thead>
         <tbody>
+          <?php 
+          
+          $select_query="Select * from crud";
+          $result=mysqli_query($conn,$select_query);
+          if ($result) {
+            echo "Success";
+          }else {
+            die("mysqli_error($result)");
+          }
+          ?>
           <tr>
             <td>1</td>
             <td>Khanam</td>
